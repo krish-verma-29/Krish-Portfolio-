@@ -165,7 +165,7 @@ function copyText(text, label) {
         const toast = document.getElementById('toast');
         toast.innerText = `${label} Copied!`;
         toast.classList.add('show');
-        
+
         // 3 second baad automatic hide ho jayega
         setTimeout(() => {
             toast.classList.remove('show');
@@ -231,7 +231,7 @@ function closeCertModal() {
     document.getElementById('cert-modal').classList.remove('show');
 }
 
-// Modal ke bahar (kaale background pe) click karne se bhi band ho jaye
+// Modal ke bahar click karne se bhi band ho jaye
 document.getElementById('cert-modal').addEventListener('click', function (e) {
     if (e.target === this) {
         closeCertModal();
