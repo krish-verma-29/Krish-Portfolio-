@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Verma | AI & App Developer Portfolio</title>
+  <meta name="description" content="Krish Verma - Aspiring App Developer specializing in AI integration, Flutter, Dart, C++ and Python. Explore my projects, certifications, and skills.">
+    <meta name="keywords" content="Krish Verma, App Developer, Flutter Developer, AI Developer, Portfolio, Python Projects">
+    <meta name="author" content="Krish Verma">
+
+    <!-- Open Graph (for WhatsApp/social share preview) -->
+    <meta property="og:title" content="Krish Verma | AI & App Developer Portfolio">
+    <meta property="og:description" content="Building high-performance mobile & web applications with AI integration.">
+    <meta property="og:image" content="krish-profile-image.png">
+    <meta property="og:type" content="website">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- TECH PARTICLES CANVAS BACKGROUND -->
+    <canvas id="tech-canvas"></canvas>
+
+    <!-- AMBIENT GLOW ORBS -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+
+    <!-- NAVIGATION -->     
+<nav>
+    <div class="nav-logo">&lt;KRISH/&gt;</div>
+    <!-- Menu Toggle for Mobile -->
+    <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+  <button id="music-btn" class="music-btn"><i class="fas fa-volume-mute"></i> Music</button>
+<audio id="bg-music" loop src="nastelbom-soft-corporate-488309.mp3"></audio> 
+<!-- Maine ek sample music link dala hai, tu apni file bhi daal sakta hai -->
+</nav>
+
+<!-- Add this Toast element right before </body> -->
+<div id="toast" class="toast">Copied to Clipboard!</div>
+
+<!-- CERTIFICATE POPUP MODAL -->
+<div id="cert-modal" class="cert-modal">
+    <div class="cert-modal-box">
+        <span class="cert-modal-close" onclick="closeCertModal()">&times;</span>
+        <img class="cert-modal-content" id="cert-modal-img" alt="Certificate">
+    </div>
+</div>
+
+
+    <!-- SLIDE 1: HERO SECTION -->
+    <section id="home" class="has-media">
+      <div class="section-media">
+    <video src="hero.mp4" autoplay muted loop playsinline></video>
+</div>
+<span class="media-tag"></span>
+      <div class="follow-sidebar reveal">
+    <span class="follow-text">FOLLOW ME ON</span>
+    <span class="follow-line"></span>
+    <div class="follow-icons">
+        <a href="https://github.com/krish-verma-29" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/krish-verma-401532354" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/me__krishhh" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+      </div>
+        <div class="hero">
+            <div class="hero-text reveal">
+                <h3 id="typing-text" class="type-target">Welcome to my portfolio!</h3>
+                <h1><span class="hero-light">Hello, my</span>name's <span class="glow-text">Krish</span>.</h1>
+                <p class="type-target" data-speed="20">I'm an aspiring app developer from Indore. Currently learning AI integration and building projects with Flutter, Dart & Python.</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's Connect</a>
+                    <a href="#projects" class="btn btn-secondary">See my work <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-img-container reveal">
+                <div class="profile-wrapper">
+                    <!-- Default Profile Graphic / Replace 'src' with your photo -->
+                    <img src="krish-profile-image.png" alt="Krish Verma" class="profile-img">
+                </div>
+
+                <!-- AI Animated Floating Stickers -->
+                <div class="ai-sticker sticker-1">
+    <i class="fas fa-brain" style="color: var(--primary-neon);"></i>
+    <span>AI Tech Learner</span>
+</div>
+<div class="ai-sticker sticker-2">
+    <i class="fas fa-mobile-alt" style="color: var(--pink-neon);"></i>
+    <span>Flutter & Dart</span>
+</div>
+                </div>
+            </div>
+        </div>
+      <div class="scroll-indicator reveal" id="auto-scroll-btn" style="cursor:pointer;">
+    <span class="scroll-circle"><i class="fas fa-chevron-down"></i></span>
+    Scroll down
+</div>
+    </section>
+
+    <!-- MERGED BACKGROUND: ABOUT + EDUCATION -->
+<div class="merged-media-wrap">
+    <div class="section-media">
+        <video src="merge-a.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <span class="media-tag"></span>
+
+    <!-- SLIDE 2: ABOUT-->
+    <section id="about">
+        <div class="section-title reveal">
+            <h2><span class="st-light">About</span><span class="st-solid">Me</span></h2>
+        </div>
+        <div class="glass-card reveal" style="max-width: 850px; margin: 0 auto; text-align: center; padding: 40px;">
+            <i class="fas fa-rocket" style="font-size: 3rem; color: var(--primary-neon); margin-bottom: 20px;"></i>
+            <p style="font-size: 1.25rem; line-height: 1.9; color: var(--text-main);">
+    "<span class="type-target" data-speed="10">To become a highly skilled App Developer by constantly expanding my programming expertise, crafting functional mobile and web applications, and contributing to cutting-edge tech projects with continuous learning.</span>"
+</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: EDUCATION -->
+    <section id="education">
+        <div class="section-title reveal">
+            <h2><span class="st-light">My</span><span class="st-solid">Education</span></h2>
+        </div>
+        <div class="timeline-grid">
+            <div class="glass-card edu-card reveal">
+                <div class="badge">Pursuing</div>
+                <h3 style="margin-top: 15px;">B.Tech (IT) - 2nd Year</h3>
+                <p class="inst">Indore Institute of Science & Technology (IIST), Indore</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;"><i class="fas fa-microchip"></i> Focus on Software Architecture & App Logic</p>
+             <button type="button" class="cert-view-btn" onclick="openCertModal('rgpv-3sem.png')">
+        <i class="fas fa-eye"></i> View Marksheet
+             </button> 
+            </div>
+            <div class="glass-card edu-card reveal">
+                <div class="badge">Completed 2024</div>
+                <h3 style="margin-top: 15px;">Class 12th (NCERT)</h3>
+                <p class="inst">Pithampur Public Higher Secondary School</p>
+            </div>
+            <div class="glass-card edu-card reveal">
+                <div class="badge">Completed 2022</div>
+                <h3 style="margin-top: 15px;">Class 10th (NCERT)</h3>
+                <p class="inst">Gaurav Public School, Pithampur</p>
+            </div>
+        </div>
+    </section>
+</div>
+  
+
+<!-- MERGED BACKGROUND: SKILLS + CERTIFICATES -->
+<div class="merged-media-wrap">
+    <div class="section-media">
+        <video src="merge-b.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <span class="media-tag"></span>
+
+    <!-- SLIDE 4: SKILLS -->
+    <section id="skills">
+        <div class="section-title reveal">
+            <h2><span class="st-light">My</span><span class="st-solid">Skills</span></h2>
+        </div>
+        <div class="skills-container reveal">
+            <div class="skill-node"><i class="fab fa-c"></i> C</div>
+            <div class="skill-node"><i class="fas fa-code"></i> C++</div>
+            <div class="skill-node"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-node"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-node"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-node"><i class="fas fa-cubes"></i> Dart</div>
+            <div class="skill-node"><i class="fas fa-file-excel"></i> MS Excel</div>
+            <div class="skill-node"><i class="fas fa-palette"></i> Photoshop</div>
+            <div class="skill-node"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+            <div class="skill-node"><i class="fas fa-comments"></i> Communication</div>
+        </div>
+    </section>
+
+    <!-- SLIDE: CERTIFICATES -->
+    <section id="certificates">
+        <div class="section-title reveal">
+            <h2><span class="st-light">My</span><span class="st-solid">Certifications</span></h2>
+        </div>
+        <div class="cert-grid">
+            <div class="glass-card cert-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-certificate"></i></div>
+                <h3>MDCA</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Master Diploma in Computer Application</p>
+                <button type="button" class="cert-view-btn" onclick="openCertModal('mdca-certificate.png')">
+                    <i class="fas fa-eye"></i> View Certificate
+                </button>
+            </div>
+            <div class="glass-card cert-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-certificate"></i></div>
+                <h3>Virtual Lab</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Workshop on Virtual Lab, IIT Delhi</p>
+                <button type="button" class="cert-view-btn" onclick="openCertModal('virtual-lab-certificate.png')">
+                    <i class="fas fa-eye"></i> View Certificate
+                </button>
+            </div>
+          <div class="glass-card cert-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-certificate"></i></div>
+                <h3>AI Horizon</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Enhanced AI knowledge and practical technology skills</p>
+                <button type="button" class="cert-view-btn" onclick="openCertModal('ai-horizon-certificate.png')">
+                    <i class="fas fa-eye"></i> View Certificate
+                </button>
+            </div>
+            <div class="glass-card cert-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-certificate"></i></div>
+                <h3>Internal Hackathon 2025</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Indore Institute of Science & Technology (IIST)</p>
+                <button type="button" class="cert-view-btn" onclick="openCertModal('internal-hackathon-certificate.png')">
+                    <i class="fas fa-eye"></i> View Certificate
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- SLIDE 5: PROJECTS -->
+    <section id="projects" class="has-media">
+      <div class="section-media">
+    <video src="projects.mp4" autoplay muted loop playsinline></video>
+</div>
+<span class="media-tag"></span>
+        <div class="section-title reveal">
+            <h2><span class="st-light">Featured</span><span class="st-solid">Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="glass-card project-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-calculator"></i></div>
+                <h3>Calculator App</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Sleek logic-driven smart calculator with smooth UI.</p>
+              <div class="project-links">
+    <a href="https://github.com/krish-verma-29/Calculator-app" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+
+            <div class="glass-card project-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-globe"></i></div>
+                <h3>Portfolio Website</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Modern dynamic portfolio web app with dark futuristic aesthetic.</p>
+              <div class="project-links">
+    <a href="https://krish-verma-29.github.io/Krish-Portfolio-/" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+
+            <div class="glass-card project-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-gamepad"></i></div>
+                <h3>Snake Water Gun</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Interactive Python-based choice game with dynamic scoring.</p>
+              <div class="project-links">
+    <a href="https://github.com/krish-verma-29/Snake-Water-Gun-game" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+
+            <div class="glass-card project-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-trophy"></i></div>
+                <h3>KBC Advance Game</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Quiz engine with life-lines & leaderboard mechanics.</p>
+              <div class="project-links">
+    <a href="https://github.com/krish-verma-29/KBC-game" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+
+            <div class="glass-card project-card reveal">
+                <div class="project-icon-wrapper"><i class="fas fa-dice"></i></div>
+                <h3>Guess The Number</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Logic game utilizing algorithmic random number checks.</p>
+              <div class="project-links">
+    <a href="https://github.com/krish-verma-29/Guess-the-number-" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+              </div>
+            </div>
+
+          <div class="glass-card project-card reveal">
+    <div class="project-icon-wrapper"><i class="fas fa-list-check"></i></div>
+    <h3>To-Do List</h3>
+    <p style="color: var(--text-muted); font-size: 0.9rem;">
+    </p>
+    <div class="project-links">
+        <a href="https://github.com/krish-verma-29/To-do-list" target="_blank" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+    </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- SLIDE 6: CONTACT & MESSAGE SECTION -->
+    <section id="contact" class="has-media">
+      <div class="section-media">
+    <video src="contact.mp4" autoplay muted loop playsinline></video>
+</div>
+<span class="media-tag"></span>
+        <div class="section-title reveal">
+            <h2><span class="st-light">Let's</span><span class="st-solid">Connect</span></h2>
+        </div>
+
+        <div class="contact-container">
+            <!-- Left Side: Contact Info -->
+            <div class="contact-info reveal">
+                <div class="status-pulse">
+                    <span class="pulse-dot"></span> Open For Internships
+                </div>
+                <h3 class="cyber-h3">Let's Connect!</h3>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Click to copy details or use the form to send a direct message.</p>
+
+                <div class="contact-info-item" onclick="copyText('krishv786017@gmail.com', 'Email')">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);">EMAIL ADDRESS</div>
+                        <div style="font-weight: 700;">krishv786017@gmail.com</div>
+                    </div>
+                </div>
+
+                <div class="contact-info-item" onclick="copyText('7747994107', 'Phone Number')">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);">PHONE NUMBER</div>
+                        <div style="font-weight: 700;">+91 7747994107</div>
+                    </div>
+                </div>
+
+                <div class="social-grid-mini">
+                    <a href="https://www.linkedin.com/in/krish-verma-401532354" target="_blank" class="social-icon-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/me__krishhh" target="_blank" class="social-icon-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/Krish7747" target="_blank" class="social-icon-btn"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="https://github.com/krish-verma-29" target="_blank" class="social-icon-btn"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/krishverma" target="_blank" class="social-icon-btn"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Advanced Message Form (Old Certificate space replacement) -->
+            <div class="glass-card message-card reveal">
+                <h3 style="font-family: 'Roboto Slab', serif; margin-bottom: 20px; color: var(--primary-neon);">
+                    <i class="fas fa-paper-plane"></i> Send Direct Message
+                </h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" name="from_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="reply_to" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-send">
+                        <span>TRANSMIT MESSAGE</span>
+                        <i class="fas fa-bolt"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Krish Verma | Engineered for High Tech Performance</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
