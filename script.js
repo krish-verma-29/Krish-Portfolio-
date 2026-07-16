@@ -275,8 +275,8 @@ document.getElementById('auto-scroll-btn').addEventListener('click', function ()
                 autoScrollInterval = null;
                 return;
             }
-            window.scrollBy(0, 15);
-        }, 7);
+            window.scrollBy(0, 25);
+        }, 14);
     }
 });
 
